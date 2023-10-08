@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>JS Project</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <!-- Even or odd -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Check if a number is even or odd.</h2>
+            <button class="number1">Click to enter a number.</button>
+            <p class="result1"></p>
+        </div>
+        <!-- Vote -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Determine whether a person is eligible to vote based on their age.</h2>
+            <button class="age">Click to enter your age.</button>
+            <p class="result2"></p>
+        </div>
+        <!-- score -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Calculate the grade of a student based on their score.</h2>
+            <button class="score">Click to enter your score.</button>
+            <p class="result3"></p>
+        </div>
+        <!-- Largest of the three numbers -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Determine the largest of three numbers.</h2>
+            <button onclick="num(event, 'one')">Click to enter first number</button>
+            <p id="one" class="result4"></p>
+            <button class="number2" onclick="num(event, 'two')">Click to enter second number</button>
+            <p id="two" class="result4"></p>
+            <button class="number2" onclick="num(event, 'three')">Click to enter third number</button>
+            <p id="three" class="result4"></p>
+            <button onclick="largest()">Click to find out the largest number.</button>
+            <p class="result5"></p>
+        </div>
+        <!-- String empty or not -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Check if a string is empty or contains some text.</h2>
+            <button onclick="text()">Enter some text</button>
+            <p class="result6"></p>
+        </div>
+        <!-- Positive, negative or zero -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Determine if a number is positive, negative or zero.</h2>
+            <button onclick="nature()">Enter a number</button>
+            <p class="result7"></p>
+        </div>        
+        <!-- multiple of both 3 and 5 -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Determine if a number is a multiple of both 3 and 5</h2>
+            <button onclick="multiple()">Enter a number</button>
+            <p class="result8"></p>
+        </div>
+        <!-- triangle -->
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <h2>Check if a triangle is equilateral, scalene or isosceles.</h2>
+            <button onclick="side(event, 'side1')">Click to enter the length of first side of the triangle.</button>
+            <p id="side1" class="result9"></p>
+            <button class="number2" onclick="side(event, 'side2')">Click to enter the length of second side of the
+                triangle.</button>
+            <p id="side2" class="result9"></p>
+            <button class="number2" onclick="side(event, 'side3')">Click to enter the length of third side of the
+                triangle.</button>
+            <p id="side3" class="result9"></p>
+            <button onclick="triangle()">Click to find out type of the triangle.</button>
+            <p class="result10"></p>
+        </div>
+        <!-- Valid username and password -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/doc.js"></script>
+</body>
+
+</html>
